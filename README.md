@@ -1,31 +1,6 @@
-<a href="https://bokeh.org">
-  <img src="https://static.bokeh.org/logos/logotype.svg" height="60" alt="Bokeh logotype" />
-</a>
-
 # Project Title
 
-Here you'll find the panel instruction and script to connect on databases.
-
-<table>
-<tr>
-  <td>Conda</td>
-  <td>
-    <a href="https://docs.bokeh.org/en/latest/docs/installation.html">
-    <img src="https://pyviz.org/_static/cache/bokeh_conda_downloads_badge.svg"
-         alt="Conda downloads per month" />
-    </a>
-  </td>
-</tr>
-
-<tr>
-  <td>PyPI</td>
-  <td>
-    <a href="https://docs.bokeh.org/en/latest/docs/installation.html">
-    <img src="https://img.shields.io/pypi/dm/bokeh.svg"
-         alt="PyPI downloads per month" />
-    </a>
-  </td>
-</tr>
+This Project is a start dashboard in bokeh to monitoring data from a db.
 
 ## Getting Started
 
@@ -33,34 +8,20 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-You need Python 3.6 or later to run bokeh. You can have multiple Python versions (2.x and 3.x) installed on the same system without problems.
+You need Python 3+. You can have multiple Python versions (2.x and 3.x) installed on the same system without problems.
 ```
-PyYAML>=3.10
-python-dateutil>=2.1
-Jinja2>=2.7
-numpy>=1.11.3
-pillow>=4.0
-packaging>=16.8
-tornado>=5
-typing_extensions >=3.7.4
-
 ```
 
 ### Installing
 
-These Bokeh dependencies are best obtained via the Anaconda Python Distribution, which was designed to include robust versions of popular libraries for the Python scientific and data analysis stacks.
-
 If you are already an Anaconda user, you can simply run the command:
 
 ```
-conda install bokeh
+pip install pymysql
 ```
-
-or by pip
-
+pip install pymongo
 ```
-pip install bokeh
-
+pip install psycopg2
 ```
 
 ## Running the tests
@@ -68,13 +29,19 @@ pip install bokeh
 Run Python shell and:
 
 ```
-import bokeh
+import pymysql
+
+import pymongo
+
+import psycopg2
 
 ```
 If it's ok! Check the version:
 
 ```
-bokeh.__version__
+psycopg2.__version__
+pymysql.__version__
+pymongo.__version__
 
 ```
 ## Authors
