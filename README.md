@@ -1,6 +1,6 @@
 # Project Title
 
-This Project is a start dashboard in bokeh to monitoring data from a db.
+Here you'll find the panel instruction and script to connect on databases..
 
 ## Getting Started
 
@@ -18,11 +18,12 @@ If you are already an Anaconda user, you can simply run the command:
 
 ```
 pip install pymysql
-```
+
 pip install pymongo
-```
+
 pip install psycopg2
 ```
+
 
 ## Running the tests
 
